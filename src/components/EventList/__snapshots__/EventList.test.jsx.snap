@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventList component renders EventList 1`] = `
+<DocumentFragment>
+  <ul>
+    <li>
+      <h3>
+        2022
+      </h3>
+      <p>
+        Best event
+      </p>
+    </li>
+    <li>
+      <h3>
+        2024
+      </h3>
+      <p>
+        Second best event
+      </p>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
