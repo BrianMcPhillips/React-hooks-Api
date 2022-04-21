@@ -10,7 +10,7 @@ const EventList = ({ events }) => {
   ));
 
   return (
-    <ul>
+    <ul data-testid="events">
       {eventStuff}
     </ul>
   );

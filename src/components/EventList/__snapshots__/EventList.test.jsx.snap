@@ -2,7 +2,9 @@
 
 exports[`EventList component renders EventList 1`] = `
 <DocumentFragment>
-  <ul>
+  <ul
+    data-testid="events"
+  >
     <li>
       <h3>
         2022
