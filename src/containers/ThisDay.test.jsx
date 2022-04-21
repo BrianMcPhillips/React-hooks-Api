@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, findByTestId } from '@testing-library/react';
+import { render, screen, findByTestId, waitFor } from '@testing-library/react';
 import ThisDay from './ThisDay';
 import { getThisDay } from '../services/thisDay-api';
 
@@ -38,5 +38,8 @@ describe('ThisDay container', () => {
     render(<ThisDay />);
 
     const eventList = await screen.findByTestId('events');
+    return waitFor(() => {
+      expect(eventList).not.toBeEmptyDOMElement();
+    });
   });
 });
